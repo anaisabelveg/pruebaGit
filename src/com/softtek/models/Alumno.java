@@ -1,19 +1,21 @@
 package com.softtek.models;
 
 public class Alumno {
-	
+
 	private int numAlumno;
 	private String nombre;
+	private String apellido;
 	private double nota;
-	
+
 	public Alumno() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Alumno(int numAlumno, String nombre, double nota) {
+	public Alumno(int numAlumno, String nombre, String apellido, double nota) {
 		super();
 		this.numAlumno = numAlumno;
 		this.nombre = nombre;
+		this.apellido = apellido;
 		this.nota = nota;
 	}
 
@@ -33,6 +35,14 @@ public class Alumno {
 		this.nombre = nombre;
 	}
 
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
 	public double getNota() {
 		return nota;
 	}
@@ -43,9 +53,9 @@ public class Alumno {
 
 	@Override
 	public String toString() {
-		return "Alumno [numAlumno=" + numAlumno + ", nombre=" + nombre + ", nota=" + nota + "]";
+		return "Alumno [numAlumno=" + numAlumno + ", nombre=" + nombre + ", apellido=" + apellido + ", nota=" + nota
+				+ "]";
 	}
-	
-	
+
 
 }
