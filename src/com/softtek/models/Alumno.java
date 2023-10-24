@@ -4,18 +4,24 @@ public class Alumno {
 
 	private int numAlumno;
 	private String nombre;
+	private String apellido;
 	private double nota;
+	private int edad;
+
 	private Direccion direccion;
 
 	public Alumno() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Alumno(int numAlumno, String nombre, double nota, Direccion direccion) {
+	public Alumno(int numAlumno, String nombre, String apellido, double nota, int edad, Direccion direccion) {
+	public Alumno(int numAlumno, String nombre, double nota) {
 		super();
 		this.numAlumno = numAlumno;
 		this.nombre = nombre;
+		this.apellido = apellido;
 		this.nota = nota;
+		this.edad = edad;
 		this.direccion = direccion;
 	}
 
@@ -35,6 +41,14 @@ public class Alumno {
 		this.nombre = nombre;
 	}
 
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
 	public double getNota() {
 		return nota;
 	}
@@ -42,6 +56,15 @@ public class Alumno {
 	public void setNota(double nota) {
 		this.nota = nota;
 	}
+	
+	public int getEdad() {
+		return edad;
+	}
+	
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
 
 	public Direccion getDireccion() {
 		return direccion;
@@ -53,8 +76,11 @@ public class Alumno {
 
 	@Override
 	public String toString() {
-		return "Alumno [numAlumno=" + numAlumno + ", nombre=" + nombre + ", nota=" + nota + ", direccion=" + direccion
+		return "Alumno [numAlumno=" + numAlumno + ", nombre=" + nombre + ", apellido=" + apellido + ", nota=" + nota
+				 + ", edad=" + edad + ", direccion=" + direccion
 				+ "]";
 	}
+	
+	
 
 }
