@@ -9,7 +9,7 @@ public class AppMain {
 		
 		System.out.println("Bienvenidos al curso de GIT");
 		
-		Alumno alumno = new Alumno(1, "Pepito", 6.3, new Direccion("Mayor", 5, "Madrid"));
+		Alumno alumno = new Alumno(1, "Pepito","Perez", 6.3, 25, new Direccion("Mayor", 5, "Madrid"));
 		System.out.println(alumno);
 
 	}
