@@ -8,12 +8,13 @@ public class Alumno {
 	private double nota;
 	private int edad;
 	private Direccion direccion;
+	private boolean repetidor; 
 
 	public Alumno() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Alumno(int numAlumno, String nombre, String apellido, double nota, int edad, Direccion direccion) {
+	public Alumno(int numAlumno, String nombre, String apellido, double nota, int edad, Direccion direccion, boolean repetidor) {
 		super();
 		this.numAlumno = numAlumno;
 		this.nombre = nombre;
@@ -21,6 +22,7 @@ public class Alumno {
 		this.nota = nota;
 		this.edad = edad;
 		this.direccion = direccion;
+		this.repetidor = repetidor;
 	}
 
 	public int getNumAlumno() {
@@ -71,11 +73,19 @@ public class Alumno {
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
+	
+	public boolean isRepetidor() {
+		return repetidor;
+	}
+	
+	public void setRepetidor(boolean repetidor) {
+		this.repetidor = repetidor;
+	}
 
 	@Override
 	public String toString() {
 		return "Alumno [numAlumno=" + numAlumno + ", nombre=" + nombre + ", apellido=" + apellido + ", nota=" + nota
-				 + ", edad=" + edad + ", direccion=" + direccion
+				 + ", edad=" + edad + ", direccion=" + direccion + ", repetidor=" + repetidor
 				+ "]";
 	}
 	
